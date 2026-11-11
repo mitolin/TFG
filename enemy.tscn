@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c66ct2ds0b533"]
+
+[ext_resource type="Script" uid="uid://ywfle3673s8r" path="res://enemy.gd" id="1_7k104"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vhjmk"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ice5i"]
+radius = 0.22314453
+height = 0.9333496
+
+[node name="Enemy" type="Node3D" unique_id=1724250403]
+script = ExtResource("1_7k104")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=273806393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44053793, 0)
+material_override = SubResource("StandardMaterial3D_vhjmk")
+mesh = SubResource("CapsuleMesh_ice5i")
